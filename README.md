@@ -108,7 +108,7 @@ Due to:
 the output sum is delayed by approximately **two clock cycles**. However, all simulated test cases produce **correct arithmetic results**, validating the CSLA functionality at high clock frequencies.
 
 <img width="1374" height="335" alt="image" src="https://github.com/user-attachments/assets/c7ef1acc-2f50-4657-84e1-abbdbdd94d79" />
-<img width="1382" height="343" alt="image" src="https://github.com/user-attachments/assets/a6d1db0a-4316-451b-a7ba-08bcc1d9f996" />
+<img width="1365" height="334" alt="image" src="https://github.com/user-attachments/assets/b85ecf9d-c8bc-47a3-81c7-12bdd46a96a3" />
 
 ---
 
