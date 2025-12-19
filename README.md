@@ -29,7 +29,8 @@ The upper RCAs compute sums assuming:
 - Carry-in = 0
 - Carry-in = 1  
 
-An array of **2:1 multiplexers** selects the correct upper sum bits `S[7:4]` and final carry-out `C8` based on `C4`. :contentReference[oaicite:1]{index=1}
+An array of **2:1 multiplexers** selects the correct upper sum bits `S[7:4]` and final carry-out `C8` based on `C4`. 
+
 <img width="679" height="670" alt="image" src="https://github.com/user-attachments/assets/512e76bd-823a-469f-9ed2-07e9cfb2321a" />
 <img width="689" height="374" alt="image" src="https://github.com/user-attachments/assets/8222f7e8-240d-4299-ad06-898f927e905a" />
 
