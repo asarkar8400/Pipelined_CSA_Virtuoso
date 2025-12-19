@@ -9,7 +9,7 @@
 
 ## Abstract
 
-This project presents the design and evaluation of a **pipelined synchronous 8-bit Carry Select Adder (CSLA)** implemented in 45nm CMOS technology. The CSLA architecture improves arithmetic performance by computing sum results in parallel for different carry-in assumptions and selecting the correct output using multiplexers. To further increase throughput and achievable clock frequency, the design is pipelined at the primary inputs and outputs using synchronous D flip-flops. Post-simulation results show correct functionality at **4 GHz** with an average power consumption of **0.96 mW**. 
+This project presents the design and evaluation of a **pipelined synchronous 8-bit Carry Select Adder (CSLA)** implemented in 45nm CMOS technology. The CSLA architecture improves arithmetic performance by computing sum results in parallel for different carry-in assumptions and selecting the correct output using multiplexers. To further increase throughput and achievable clock frequency, the design is pipelined at the primary inputs and outputs using synchronous D flip-flops. Post-simulation results show correct functionality at **4 GHz** with an average power consumption of **< 1 mW**. 
 
 ---
 
@@ -120,7 +120,7 @@ the output sum is delayed by approximately **two clock cycles**. However, all si
 | 6                    | 1.279             |
 | 8                    | 1.601             |
 
-As clock frequency increases, power consumption rises; however, the **frequency-to-power ratio improves**, indicating efficient scaling. The use of transmission-gate logic and mirror full adders helps limit transistor count, contributing to reduced average power consumption. :contentReference[oaicite:7]{index=7}
+As clock frequency increases, power consumption rises; however, the **frequency-to-power ratio improves**, indicating efficient scaling. The use of transmission-gate logic and mirror full adders helps limit transistor count, contributing to reduced average power consumption.
 
 ---
 
@@ -141,4 +141,4 @@ Potential enhancements include:
 
 ## Conclusion
 
-This project demonstrates a **high-performance pipelined 8-bit Carry Select Adder** implemented in 45nm CMOS technology. The design achieves correct functionality at **4 GHz** with low power consumption, validating the effectiveness of parallel carry-select logic combined with input/output pipelining. The architecture provides a solid foundation for further optimization in high-speed arithmetic circuits. :contentReference[oaicite:8]{index=8}
+This project demonstrates a **high-performance pipelined 8-bit Carry Select Adder** implemented in 45nm CMOS technology. The design achieves correct functionality at **4 GHz** with low power consumption, validating the effectiveness of parallel carry-select logic combined with input/output pipelining. The architecture provides a solid foundation for further optimization in high-speed arithmetic circuits. 
