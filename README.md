@@ -9,7 +9,7 @@
 
 ## Abstract
 
-This project presents the design and evaluation of a **pipelined synchronous 8-bit Carry Select Adder (CSLA)** implemented in 45nm CMOS technology. The CSLA architecture improves arithmetic performance by computing sum results in parallel for different carry-in assumptions and selecting the correct output using multiplexers. To further increase throughput and achievable clock frequency, the design is pipelined at the primary inputs and outputs using synchronous D flip-flops. Post-simulation results show correct functionality at **4 GHz** with an average power consumption of **0.96 mW**. :contentReference[oaicite:0]{index=0}
+This project presents the design and evaluation of a **pipelined synchronous 8-bit Carry Select Adder (CSLA)** implemented in 45nm CMOS technology. The CSLA architecture improves arithmetic performance by computing sum results in parallel for different carry-in assumptions and selecting the correct output using multiplexers. To further increase throughput and achievable clock frequency, the design is pipelined at the primary inputs and outputs using synchronous D flip-flops. Post-simulation results show correct functionality at **4 GHz** with an average power consumption of **0.96 mW**. 
 
 ---
 
@@ -30,6 +30,8 @@ The upper RCAs compute sums assuming:
 - Carry-in = 1  
 
 An array of **2:1 multiplexers** selects the correct upper sum bits `S[7:4]` and final carry-out `C8` based on `C4`. :contentReference[oaicite:1]{index=1}
+<img width="679" height="670" alt="image" src="https://github.com/user-attachments/assets/512e76bd-823a-469f-9ed2-07e9cfb2321a" />
+<img width="689" height="374" alt="image" src="https://github.com/user-attachments/assets/8222f7e8-240d-4299-ad06-898f927e905a" />
 
 ---
 
@@ -42,7 +44,8 @@ The **critical path** begins at the output of the input-stage flip-flop driving 
 2. The carry-select multiplexer logic resolving the MSB (`S7`)  
 3. The input of the output-stage flip-flop  
 
-This pipelining allows the CSLA to operate reliably at multi-GHz clock rates. :contentReference[oaicite:2]{index=2}
+This pipelining allows the CSLA to operate reliably at multi-GHz clock rates.
+<img width="642" height="853" alt="image" src="https://github.com/user-attachments/assets/16d95fb2-ced6-4d0e-912a-bae66f77194c" />
 
 ---
 
@@ -55,7 +58,9 @@ This pipelining allows the CSLA to operate reliably at multi-GHz clock rates. :c
 - Synchronous reset
 - Edge-triggered behavior via complementary clock phases
 
-The master latch samples the input during one clock phase, while the slave latch transfers the stored value to the output on the opposite phase, ensuring correct edge-triggered operation. :contentReference[oaicite:3]{index=3}
+The master latch samples the input during one clock phase, while the slave latch transfers the stored value to the output on the opposite phase, ensuring correct edge-triggered operation. 
+
+<img width="1583" height="625" alt="image" src="https://github.com/user-attachments/assets/7c6e0dbb-6bab-4426-be8a-1e2104b6294a" />
 
 ---
 
@@ -71,7 +76,9 @@ Key advantages:
 - Balanced rise/fall delays
 - Reduced transistor count, leading to lower power and area
 
-The sum output is buffered to ensure full rail-to-rail swing and sufficient drive strength. :contentReference[oaicite:4]{index=4}
+The sum output is buffered to ensure full rail-to-rail swing and sufficient drive strength. 
+
+<img width="1390" height="864" alt="image" src="https://github.com/user-attachments/assets/50eb35e0-e152-41a7-89b1-13957013b15a" />
 
 ---
 
@@ -81,7 +88,9 @@ The sum output is buffered to ensure full rail-to-rail swing and sufficient driv
 - Controlled by complementary select signals (`S` and `S̅`)
 - Full rail-to-rail signal transfer without threshold voltage degradation
 
-The symmetric structure ensures balanced delay for both data paths, making it well-suited for large arithmetic designs. :contentReference[oaicite:5]{index=5}
+The symmetric structure ensures balanced delay for both data paths, making it well-suited for large arithmetic designs.
+
+<img width="1203" height="845" alt="image" src="https://github.com/user-attachments/assets/d6e4c9b2-4de1-4ff0-bd91-62e2f115c627" />
 
 ---
 
