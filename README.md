@@ -1,8 +1,7 @@
 # Pipelined Synchronous 8-Bit Carry Select Adder (CSLA)
-
-**Author:** Aritro Sarkar  
+ 
 **Technology:** 45nm CMOS (FreePDK45)  
-**Tools:** Cadence Virtuoso  
+**Software:** Cadence Virtuoso  
 **Target Frequency:** 4 GHz  
 
 ---
