@@ -105,7 +105,10 @@ Due to:
 - Setup time
 - Combinational logic delay  
 
-the output sum is delayed by approximately **two clock cycles**. However, all simulated test cases produce **correct arithmetic results**, validating the CSLA functionality at high clock frequencies. :contentReference[oaicite:6]{index=6}
+the output sum is delayed by approximately **two clock cycles**. However, all simulated test cases produce **correct arithmetic results**, validating the CSLA functionality at high clock frequencies.
+
+<img width="1374" height="335" alt="image" src="https://github.com/user-attachments/assets/c7ef1acc-2f50-4657-84e1-abbdbdd94d79" />
+<img width="1382" height="343" alt="image" src="https://github.com/user-attachments/assets/a6d1db0a-4316-451b-a7ba-08bcc1d9f996" />
 
 ---
 
